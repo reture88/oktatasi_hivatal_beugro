@@ -1,0 +1,14 @@
+includes:
+  - phar://phpstan.phar/conf/bleedingEdge.neon
+parameters:
+  editorUrl: 'phpstorm://open?file=%%file%%&line=%%line%%'
+  parallel:
+    jobSize: 20
+    maximumNumberOfProcesses: 32
+    minimumNumberOfJobsPerProcess: 2
+  phpVersion: 80200
+  level: 5
+  paths:
+    - src
+  bootstrapFiles:
+    - vendor/autoload.php
