@@ -2,7 +2,7 @@
     "name": "reture/oktatasi_hivatal_beugro",
     "autoload": {
         "psr-4": {
-            "Reture\\OktatasiHivatalBeugro\\": "src/"
+            "src\\": "src/"
         },
         "files": [
             "src/functions.php"
