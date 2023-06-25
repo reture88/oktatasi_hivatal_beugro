@@ -27,7 +27,7 @@ foreach(scandir($examplesPath) as $exampleFile){
 
             // Bemeneti adat Objektummá alakítása
             $inputDataObject = (new MainDataTransformer)->createObjectFromArrayData($exampleFileContent);
-            //dd($inputDataObject);
+      
             // Érettségi eredmények tesztlése - pontszámítás lehetséges/nem lehetséges
             (new ResultTester($inputDataObject))->testRequirements();
         
